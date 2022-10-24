@@ -12,27 +12,32 @@
 </head>
 <body>
     <div id="barra">
-        <img src="html/imagens/icone-barra.png" alt="" width="35" height="35"> 
+        <img src="html/imagens/icon-site.png" alt="" width="35" height="35"> 
         <h1>Índice de Massa Corporal</h2>
     </div>
 
     <div id="conteudo">
 
         <div id="calculadora">
-            <h2>insira seus dados</h2><br>
-            <button type="">idoso</button>
-            <button type="button">adulto</button><br>
-            <h4 class="texto ">Peso:</h4>
-            <input type="number" id="peso">
-            <h4 class="texto ">Altura:</h4>
-            <input type="number" id="altura"><br><br>
-            <button type="button" onclick="calcular()">calcular</button>
-            <p id="resultadoimc"></p>
+            <h2>insira seus dados</h2>
+            <span><input id="checkbox" type="checkbox" onclick="idosoF()"></input></span>   
+            <span id="idoso">Idoso</span>
+            <div id="dados">
+                <h4 class="texto ">Peso:</h4>
+                <input placeholder="ex: 56" type="number" id="peso">
+                <h4 class="texto ">Altura:</h4>
+                
+                <input placeholder="ex: 1.56 " type="number" id="altura">
+            </div>
+            <button type="button" onclick="calcular()">Calcular</button>
+
         </div>
 
         <div id="resultado">
-            <img src="html/imagens/fundo-resultado.png" alt="" > 
+            <img id="boneco" src="html/imagens/fundo-resultado.png" alt="" > 
             <h3>Seu IMC é:</h3>
+            <p id="resultadoimc"></p>
+            <p id="classificacao"></p>
             <div>
                 
             </div>
