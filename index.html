@@ -6,44 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calcule seu IMC!</title>
     <link rel="stylesheet" href="css/index.css">
-    <link rel="icon" href="html/imagens/icon-site.png">
-    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@500;700&family=Righteous&display=swap" rel="stylesheet">
+    <link rel="icon" href="imagens/icon-site.png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
     <script src="js/index.js"></script>
 </head>
 <body>
     <div id="barra">
-        <img src="html/imagens/icon-site.png" alt="" width="35" height="35"> 
-        <h1>Índice de Massa Corporal</h2>
+        <div><img src="imagens/icone-barra.png" alt=""></div>
+        <div id="texto-barra">
+            <p>O IMC (Índice de Massa Corporal) é um parâmetro utilizado para avaliar se o peso está dentro do valor ideal para a altura. Isso significa que, a partir do resultado do IMC é possível saber se a pessoa está acima ou abaixo do peso recomendado e também diagnosticar problemas de saúde como obesidade ou desnutrição. O IMC pode ser utilizado em crianças, adolescentes, adultos ou idosos. A classificação do índice de massa corporal (IMC) pode ajudar a identificar problemas de obesidade ou desnutrição, em crianças, adolescentes, adultos e idosos. Além de calcular o valor de IMC, esta calculadora também indica qual o intervalo de peso ideal que deve ter para garantir uma melhor qualidade de vida. Ter um peso dentro do intervalo de peso ideal ajuda ainda a evitar o aparecimento de várias doenças crônicas, como diabetes e hipertensão.
+            </p>
+        </div>
+        <p id="titulo-calculadora">Calculadora</p>
     </div>
-
-    <div id="conteudo">
-
-        <div id="calculadora">
-            <h2>insira seus dados</h2>
+    <div id="calculadora">
+    
+        <div id="calculo">
+            <h2>Insira seus dados</h2>
             <span><input id="checkbox" type="checkbox" onclick="idosoF()"></input></span>   
             <span id="idoso">Idoso</span>
             <div id="dados">
-                <h4 class="texto ">Peso:</h4>
+                <h4 class="texto">Peso:</h4>
                 <input placeholder="ex: 56" type="number" id="peso">
                 <h4 class="texto ">Altura:</h4>
-                
                 <input placeholder="ex: 1.56 " type="number" id="altura">
             </div>
             <button type="button" onclick="calcular()">Calcular</button>
-
         </div>
 
         <div id="resultado">
-            <img id="boneco" src="html/imagens/fundo-resultado.png" alt="" > 
+            <img id="boneco" src="imagens/maos.png" alt=""> 
             <h3>Seu IMC é:</h3>
             <p id="resultadoimc"></p>
-            <p id="classificacao"></p>
-            <div>
-                
-            </div>
-        </div>
-        
-
+            <p id="classificacao"></p></div>
     </div>
-</body>
+</body> 
 </html>

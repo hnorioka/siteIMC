@@ -27,39 +27,39 @@ function calcular() {
 
     if (peso !== "" && altura !== ""){
         document.getElementById("resultadoimc").innerHTML = "Sem valores"
-        imagem.src="html/imagens/fundo-resultado.png";
+        imagem.src="imagens/fundo-resultado.png";
         document.getElementById("classificacao").innerHTML = ""
     }
     
     if (idoso == false){
         if (resultado < 18.5){
             document.getElementById("resultadoimc").innerHTML = resultado.toFixed([1])
-            imagem.src="html/imagens/boneco1.png";
+            imagem.src="imagens/boneco1.png";
             document.getElementById("classificacao").innerHTML = "baixo peso"
         }
         else if (resultado >= 18.5 && resultado < 24.9){
             document.getElementById("resultadoimc").innerHTML = resultado.toFixed([1])
-            imagem.src="html/imagens/boneco2.png";
+            imagem.src="imagens/boneco2.png";
             document.getElementById("classificacao").innerHTML = "peso normal"
         }
         else if (resultado >= 25 && resultado < 29.9){
             document.getElementById("resultadoimc").innerHTML = resultado.toFixed([1])
-            imagem.src="html/imagens/boneco3.png";
+            imagem.src="imagens/boneco3.png";
             document.getElementById("classificacao").innerHTML = "excesso de peso"
         }
         else if (resultado >= 30 && resultado < 34.9){
             document.getElementById("resultadoimc").innerHTML = resultado.toFixed([1])
-            imagem.src="html/imagens/boneco4.png";
+            imagem.src="imagens/boneco4.png";
             document.getElementById("classificacao").innerHTML = "obesidade 1"
         }
         else if (resultado >= 30 && resultado < 39.9){
             document.getElementById("resultadoimc").innerHTML = resultado.toFixed([1])
-            imagem.src="html/imagens/boneco4.png";
+            imagem.src="imagens/boneco4.png";
             document.getElementById("classificacao").innerHTML = "obesidade 2"
         }
         else if (resultado >= 40){
             document.getElementById("resultadoimc").innerHTML = resultado.toFixed([1])
-            imagem.src="html/imagens/boneco5.png";
+            imagem.src="imagens/boneco5.png";
             document.getElementById("classificacao").innerHTML = "obesidade 3"
         }
         else{
@@ -70,17 +70,17 @@ function calcular() {
         
         if (resultado <= 22){
             document.getElementById("resultadoimc").innerHTML = resultado.toFixed([1])
-            imagem.src="html/imagens/boneco1.png";
+            imagem.src="imagens/boneco1.png";
             document.getElementById("classificacao").innerHTML = "baixo peso"
         }
         else if (resultado > 22 && resultado < 27){
             document.getElementById("resultadoimc").innerHTML = resultado.toFixed([1])
-            imagem.src="html/imagens/boneco2.png";
+            imagem.src="imagens/boneco2.png";
             document.getElementById("classificacao").innerHTML = "adequado"
         }
         else if (resultado >=27){
             document.getElementById("resultadoimc").innerHTML = resultado.toFixed([1])
-            imagem.src="html/imagens/boneco3.png";
+            imagem.src="imagens/boneco3.png";
             document.getElementById("classificacao").innerHTML = "sobrepeso"
         }
     }
